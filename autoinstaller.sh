@@ -4,6 +4,10 @@
 . <(wget -qO- https://raw.githubusercontent.com/g7AzaZLO/server_primary_setting/refs/heads/main/server_primary_setting)
 
 # Установка необходимых пакетов
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu jammy main universe" -y
+sudo apt-get update
+sudo apt-get install -y libatspi2.0-0
+
 sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu jammy main universe"
 sudo apt-get install -y libasound2=1.2.6.1-1ubuntu1 libasound2-data=1.2.6.1-1ubuntu1
 sudo apt install -y libatspi2.0-0 libgtk-3-0 libnotify4 libnss3 libxss1 libxtst6 xdg-utils libatspi2.0-0 libsecret-1-0 desktop-file-utils libgbm1
